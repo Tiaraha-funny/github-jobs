@@ -9,7 +9,6 @@ function HeaderForm() {
         <div>
         <h1 className="header">Github Jobs</h1>
         </div>
-      <SearchJobs />
     </Header>
   );
 }

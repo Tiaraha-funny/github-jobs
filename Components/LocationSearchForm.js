@@ -3,7 +3,7 @@ import { Contexts } from "./GlobalContexts";
 import { CheckBoxStyle } from "./StylesComponents";
 
 function LocationSearchForm() {
-  const { search, handleInputChange } = useContext(Contexts);
+  // const { search, handleInputChange } = useContext(Contexts);
 
   return (
     <form>
@@ -13,8 +13,6 @@ function LocationSearchForm() {
           name="full_time"
           className="full-time-checkbox"
           label="Full time only"
-          checked={search.full_time}
-          onChange={handleInputChange}
         />{" "}
         Full time
       </div>
@@ -24,9 +22,6 @@ function LocationSearchForm() {
         <input
           type="text"
           name="location"
-          value={search.location || ""}
-          placeholder="Enter location"
-          onChange={handleInputChange}
         />
       </p>
 
