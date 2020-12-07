@@ -1,5 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./Components/App";
+import GithubJobsApp from "./Components/GithubJobsApp";
+import { GlobalContexts } from "./Components/GlobalContexts";
+import "./style.css";
 
-ReactDOM.render(<App/>, document.getElementById('root'));
+ReactDOM.render(
+  <GlobalContexts>
+    <GithubJobsApp />
+  </GlobalContexts>,
+  document.getElementById("root")
+);

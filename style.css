@@ -1,0 +1,25 @@
+body {
+    background-color: #f2f2f2;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+.searchForm {
+    background-image: url(./images/backgroundImg.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: block;
+    height: 150px;
+    /* width: 100%; */
+    border-radius: 10px;
+}
+
+.search-form {
+    text-align: center;
+    align-items: center;
+    padding: 50px;
+}
