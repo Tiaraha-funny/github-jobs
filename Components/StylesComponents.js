@@ -13,10 +13,19 @@ const DisplayJobs = styled.div`
   background-color: #ffffff;
   margin-bottom: 10px;
   padding: 20px;
+  a .contentes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+  }
 `
 
 const CheckBoxStyle = styled.div`
 display: grid;
+margin-top: 30px;
+margin-bottom: 30px;
 `
 
 export { MainStyle, Header, DisplayJobs, CheckBoxStyle };

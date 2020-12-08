@@ -9,13 +9,20 @@ img {
 
 .searchForm {
     background-image: url(/backgroundImg.de30c8c3.png);
-    background-repeat: no-repeat;
-    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: 50%;
     background-size: cover;
-    display: block;
-    height: 150px;
-    /* width: 100%; */
-    border-radius: 10px;
+    background-repeat: no-repeat;
+    border-radius: 8px;
+    height: 138px;
+    margin: 32px auto 0;
+    padding: 0 18px;
+}
+
+.search-group {
+    height: 55px;
 }
 
 .search-form {
@@ -23,17 +30,68 @@ img {
 }
 
 .search__section--form > form {
-    width: 60%;
-    align-items: center;
-    background-color: #ffffff;
-    padding: 10px;
-    margin: auto;
+    font-family: "Roboto",sans-serif;
+    margin-left: 10px;
+    margin-right: 24px;
+    height: 32px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    position: absolute;
-    top: 170px;
-    left: 20%;
+    border: none;
 }
+
+.search__section--form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 4px;
+    width: 100%;
+}
+
+.search__section--form button {
+    color: #fff;
+    background-color: #1e86ff;
+    transition: opacity .2s;
+    outline: none;
+    padding: 16px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.lovation-input input {
+    padding: 16px;
+
+}
+
+.input-filters label {
+    display: block;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    line-height: 2.1rem;
+    font-weight: 700;
+    color: #b9bdcf;
+    margin-top: 32px;
+    margin-bottom: 14px;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    padding: 4px 5px 4px 17px;
+    height: 48px;
+    background-color: #fff;
+    border-radius: 4px;
+    max-width: 790px;
+}
+
+.input-filters .form-group {
+    box-shadow: 0 2px 4px rgba(0,0,0,.05);
+}
+
 
 a {
     text-decoration: none;
@@ -43,6 +101,29 @@ input {
     outline: none;
     border-radius: 10px;
     border: none;
+}
+
+.backHome {
+    font-size: 50px;
+}
+
+.backHome:hover {
+    color: red;
+}
+
+.filters {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.logo-style {
+    width: 50%;
+}
+
+.information {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 /*# sourceMappingURL=/github-jobs.e31bb0bc.css.map */
