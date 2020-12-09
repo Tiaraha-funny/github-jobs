@@ -22,7 +22,7 @@ function GithubJobsContent({ job }) {
               {job.company} 
               (<span>{job.location}</span>)
             </p>
-            <p className="clockIcon">{new Date().getTimezoneOffset(job.created_at)}</p>
+            <p className="clockIcon">{job.created_at}</p>
           </div>
         </div>
       </Link>

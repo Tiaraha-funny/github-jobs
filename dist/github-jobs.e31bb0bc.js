@@ -52917,7 +52917,7 @@ function GithubJobsContent({
     className: "companyIcon"
   }, job.company, "(", /*#__PURE__*/_react.default.createElement("span", null, job.location), ")"), /*#__PURE__*/_react.default.createElement("p", {
     className: "clockIcon"
-  }, new Date().getTimezoneOffset(job.created_at))))));
+  }, job.created_at)))));
 }
 
 var _default = GithubJobsContent;
