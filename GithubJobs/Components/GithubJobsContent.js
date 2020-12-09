@@ -18,10 +18,11 @@ function GithubJobsContent({ job }) {
             <button>{job.type}</button>
           </div>
           <div>
-            <p>
-              {job.company} ( {job.location} )
+            <p className="companyIcon">
+              {job.company} 
+              (<span>{job.location}</span>)
             </p>
-            <p>{job.created_at}</p>
+            <p className="clockIcon">{new Date().getTimezoneOffset(job.created_at)}</p>
           </div>
         </div>
       </Link>

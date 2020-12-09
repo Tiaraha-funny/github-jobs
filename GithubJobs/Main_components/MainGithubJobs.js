@@ -5,6 +5,7 @@ import { Contexts } from "./GlobalContexts";
 import LocationSearchForm from "../Components/LocationSearchForm";
 import SearchJobs from "../Components/SearchJobs";
 import { Header } from "../Components/StylesComponents";
+import ProgressBar from "../Components/ProgressBar";
 
 function MainGithubJobs() {
   // Call the variable and the functions from the context component
@@ -47,6 +48,9 @@ function MainGithubJobs() {
         </div>
         <div className="jobs__container--display">
           <DisplayGithubJobs />
+        </div>
+        <div className="jobs__progress--bar">
+        <ProgressBar />
         </div>
       </div>
     </div>

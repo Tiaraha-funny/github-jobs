@@ -8,7 +8,10 @@ function SearchJobs({ searchJobs, setSearchJobs, handleFilterSearchJobsName }) {
   return (
     <div className="searchForm">
       <div className="search__section--form">
-        <form className="search-form" onSubmit={handleFilterSearchJobsName}>
+        <form
+          className="search-form outlineIcon"
+          onSubmit={handleFilterSearchJobsName}
+        >
           <input
             type="text"
             name="description"

@@ -30,6 +30,7 @@ function LocationSearchForm() {
       <div className="input-filters">
         <label>Location</label>
         <div className="form-group">
+          <span className="companyIcon"></span>
           <input
             type="text"
             value={location}

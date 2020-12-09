@@ -125,6 +125,48 @@ input {
     padding: 0;
 }
 
+.companyIcon {
+    content: url(/public_in-input.af4d6bbb.svg);
+}
+
+.clockIcon::before {
+    content: url(/clock.2338c49f.svg);
+}
+
+.outlineIcon::before {
+    content: url(/work_outline.f34072e2.svg);
+}
+
+/* ------------------------Progress bar--------------------------------------------------- */
+
+    .pagination {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+    }
+
+    .pagination li {
+        border: 1px solid #b9bdcf;
+        border-radius: 4px;
+        margin: 0 12px;
+        color: #b9bdcf;
+        cursor: pointer;
+    }
+
+    .progress {
+        color: #b9bdcf;
+        font-family: "Roboto",sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 11px 15px;
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+
+    .progress:hover {
+        background-color: #5252f5;
+    }
 /* --------------------------------Markdown style --------------------------------------------- */
 
 .header h1 {

@@ -52913,7 +52913,11 @@ function GithubJobsContent({
     src: job.company_logo
   })), /*#__PURE__*/_react.default.createElement("div", {
     className: "information"
-  }, /*#__PURE__*/_react.default.createElement("p", null, job.location), /*#__PURE__*/_react.default.createElement("p", null, job.title), /*#__PURE__*/_react.default.createElement("button", null, job.type)), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", null, job.company, " ( ", job.location, " )"), /*#__PURE__*/_react.default.createElement("p", null, job.created_at)))));
+  }, /*#__PURE__*/_react.default.createElement("p", null, job.location), /*#__PURE__*/_react.default.createElement("p", null, job.title), /*#__PURE__*/_react.default.createElement("button", null, job.type)), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("p", {
+    className: "companyIcon"
+  }, job.company, "(", /*#__PURE__*/_react.default.createElement("span", null, job.location), ")"), /*#__PURE__*/_react.default.createElement("p", {
+    className: "clockIcon"
+  }, new Date().getTimezoneOffset(job.created_at))))));
 }
 
 var _default = GithubJobsContent;
@@ -52997,7 +53001,9 @@ function LocationSearchForm() {
     className: "input-filters"
   }, /*#__PURE__*/_react.default.createElement("label", null, "Location"), /*#__PURE__*/_react.default.createElement("div", {
     className: "form-group"
-  }, /*#__PURE__*/_react.default.createElement("input", {
+  }, /*#__PURE__*/_react.default.createElement("span", {
+    className: "companyIcon"
+  }), /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
     value: location,
     name: "location",
@@ -53056,7 +53062,7 @@ function SearchJobs({
   }, /*#__PURE__*/_react.default.createElement("div", {
     className: "search__section--form"
   }, /*#__PURE__*/_react.default.createElement("form", {
-    className: "search-form",
+    className: "search-form outlineIcon",
     onSubmit: handleFilterSearchJobsName
   }, /*#__PURE__*/_react.default.createElement("input", {
     type: "text",
@@ -53070,6 +53076,48 @@ function SearchJobs({
 }
 
 var _default = SearchJobs;
+exports.default = _default;
+},{"react":"node_modules/react/index.js"}],"GithubJobs/Components/ProgressBar.js":[function(require,module,exports) {
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.default = void 0;
+
+var _react = _interopRequireDefault(require("react"));
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function ProgressBar() {
+  function handleClick() {
+    console.log("I am clicked. Do you want to have progress");
+  }
+
+  return /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement("ul", {
+    className: "pagination"
+  }, /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleClick,
+    className: "progress"
+  }, "1")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleClick,
+    className: "progress"
+  }, "2")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleClick,
+    className: "progress"
+  }, "3")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleClick,
+    className: "progress"
+  }, "...")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleClick,
+    className: "progress"
+  }, "9")), /*#__PURE__*/_react.default.createElement("li", null, /*#__PURE__*/_react.default.createElement("button", {
+    onClick: handleClick,
+    className: "progress"
+  }, " 10 "))));
+}
+
+var _default = ProgressBar;
 exports.default = _default;
 },{"react":"node_modules/react/index.js"}],"GithubJobs/Main_components/MainGithubJobs.js":[function(require,module,exports) {
 "use strict";
@@ -53092,6 +53140,8 @@ var _LocationSearchForm = _interopRequireDefault(require("../Components/Location
 var _SearchJobs = _interopRequireDefault(require("../Components/SearchJobs"));
 
 var _StylesComponents = require("../Components/StylesComponents");
+
+var _ProgressBar = _interopRequireDefault(require("../Components/ProgressBar"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -53136,12 +53186,14 @@ function MainGithubJobs() {
     className: "Location__form"
   }, /*#__PURE__*/_react.default.createElement(_LocationSearchForm.default, null)), /*#__PURE__*/_react.default.createElement("div", {
     className: "jobs__container--display"
-  }, /*#__PURE__*/_react.default.createElement(_DisplayGithubJobs.default, null))));
+  }, /*#__PURE__*/_react.default.createElement(_DisplayGithubJobs.default, null)), /*#__PURE__*/_react.default.createElement("div", {
+    className: "jobs__progress--bar"
+  }, /*#__PURE__*/_react.default.createElement(_ProgressBar.default, null))));
 }
 
 var _default = MainGithubJobs;
 exports.default = _default;
-},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./DisplayGithubJobs":"GithubJobs/Main_components/DisplayGithubJobs.js","./GlobalContexts":"GithubJobs/Main_components/GlobalContexts.js","../Components/LocationSearchForm":"GithubJobs/Components/LocationSearchForm.js","../Components/SearchJobs":"GithubJobs/Components/SearchJobs.js","../Components/StylesComponents":"GithubJobs/Components/StylesComponents.js"}],"GithubJobs/Main_components/GithubJobsApp.js":[function(require,module,exports) {
+},{"react":"node_modules/react/index.js","react-router-dom":"node_modules/react-router-dom/esm/react-router-dom.js","./DisplayGithubJobs":"GithubJobs/Main_components/DisplayGithubJobs.js","./GlobalContexts":"GithubJobs/Main_components/GlobalContexts.js","../Components/LocationSearchForm":"GithubJobs/Components/LocationSearchForm.js","../Components/SearchJobs":"GithubJobs/Components/SearchJobs.js","../Components/StylesComponents":"GithubJobs/Components/StylesComponents.js","../Components/ProgressBar":"GithubJobs/Components/ProgressBar.js"}],"GithubJobs/Main_components/GithubJobsApp.js":[function(require,module,exports) {
 "use strict";
 
 Object.defineProperty(exports, "__esModule", {
@@ -53260,7 +53312,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./images\\backgroundImg.png":[["backgroundImg.de30c8c3.png","images/backgroundImg.png"],"images/backgroundImg.png"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./images\\backgroundImg.png":[["backgroundImg.de30c8c3.png","images/backgroundImg.png"],"images/backgroundImg.png"],"./icons\\public_in-input.svg":[["public_in-input.af4d6bbb.svg","icons/public_in-input.svg"],"icons/public_in-input.svg"],"./icons\\clock.svg":[["clock.2338c49f.svg","icons/clock.svg"],"icons/clock.svg"],"./icons\\work_outline.svg":[["work_outline.f34072e2.svg","icons/work_outline.svg"],"icons/work_outline.svg"],"_css_loader":"../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _react = _interopRequireDefault(require("react"));
@@ -53306,7 +53358,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50659" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53529" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
