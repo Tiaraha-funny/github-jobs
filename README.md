@@ -1,12 +1,7 @@
 # Github Jobs
 
-Here we are, the last graded project of this semester.
+My goal with this projector is to create a job search using an API, and use React to handle the frontend. I fulfill what the  users will do in this app.
 
-Your challenge: Create a job search using an API, and use React to handle the frontend. Don’t look at the existing solution. Fulfill user stories below:
-
-![image](./assets/1.png)
-![image](./assets/2.png)
-![image](./assets/3.png)
 
 - User story: I can see a list of jobs in a city by default
 - User story: I can search for jobs with a given keyword
@@ -41,7 +36,6 @@ Template for your readme :
 
 <!-- Please update value in the {}  -->
 
-<h1 align="center">{Your project name}</h1>
 
 <div align="center">
   <h3>
@@ -70,17 +64,76 @@ Template for your readme :
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+1-  Screeshot for the desktop. It is not 
+well-styled but I tried to make it 
+nice-looking
 
-Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
+![image](./images/desktop-githubjob-image.png)
 
--   Where can I see your demo?
--   What was your experience?
--   In a few sentences, explain the structure of your project.
--   If you had more time, what area of your project would you improve?
--   Did you learn anything new while working on this project?
--   What was the most challenging part for you?
--   Any other comments?
+2-  This is the description details of 
+this github jobs when you click one of the 
+github list jobs, the detail appears and 
+you can go back to search another one  
+again by clicking the back arrow. Both 
+desktop and mobile have job details
+
+![image](./images/job-detail.png)
+
+3- This is the mobile screenshot app. The 
+actions are similar to the desktop but 
+only the feature which is not the same
+
+![image](./images/mobile-githubjob-image.png)
+
+## Description
+
+The whole demo exists inside of the App.js and GlobalContext.js files.
+
+#### **1- Folder descriptions**
+
+  I have one big folder which handle all my folder whithin named components of this project. These are the folder inside it.
+
+  -  I have a component folder which handles all the components where I handle the displaying of code. 
+  -  I have a Main component folder to handle the functions of all displaying and the context function where I fetch the data from Api. 
+ - I got a page folder just to handle the page's details component. 
+ - I have a style component file just for the style and style css file too. I used both style from react and style from css.
+
+### **2- Functions descriptions**
+
+- I have GithubJobsApp files which handles the main of this code where the router and switch react set. 
+- I used Router in this code to keep the link of the homepage and the details work properly.
+- My GlobalContext file is the biggest file which keeps most of the functions and I created the context in there and access it by providing it in the return statement with a value object. There is also storing the apis data. These apis are worked by using useEffect and switch statement.
+
+## Experience
+
+In this project, I faced quite a lot of struggles to get most of the features.
+
+- Getting the Api links worked because I got a cors bug but Thanks to google that I found a way how to solve it.
+- Filtering the data by clicking the search button. It took me a day to work on it but I was happy when I found a little way to solve some of it.
+- Checking the checkbox of all the locations. 
+
+## What I have learned and improve
+
+- I learned new things by creating githubJobs application and filter some jobs from another country, full time work and type of github work from an API key. It was amazing! 
+- I also learn about having more Apis links and use them according to what they can handle with. Also using more than two useEffects. Before I didn’t know how to use more than two useEffect at once but I improved my skills by doing this project.
+
+## Things needed to improve
+
+- Having a progress bar where the display appears
+
+- Using many apis at once and use them as many ways as they are.
+
+- Filter something by checking the checkbox.
+
+## Some comment
+
+- The fetching Api is very slow so you really have to wait around two minutes before it is loaded for you. It does like that every action that you take for example, checking the full time and locations checkboxes. 
+
+- Having good name variables and functions are keys to understand more about code. It should always relate to what your functions do and help you to code it and find easily what I should code now. Not only for you to understand but also the others.
+
+## Some problem
+
+I couldn’t manage to finish the project until the end.
 
 
 
@@ -111,11 +164,7 @@ $ npm install
 $ npm start
 ```
 
-## Acknowledgements
-
-<!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
-
 ## Contact
 
--   Website [your-website.com](https://{your-web-site-link})
--   GitHub [@your-username](https://{github.com/your-usermame})
+-   Website [my-website.com](https://github-jobs-peta.netlify.app/)
+-   GitHub [@tiaraha-funny](https://github.com/Tiaraha-funny/github-jobs)

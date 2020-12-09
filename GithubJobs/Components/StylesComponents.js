@@ -13,6 +13,7 @@ const DisplayJobs = styled.div`
   background-color: #ffffff;
   margin-bottom: 10px;
   padding: 20px;
+  border-radius: 10px;
   a .contentes {
     display: flex;
     flex-direction: row;
@@ -20,12 +21,22 @@ const DisplayJobs = styled.div`
     align-items: center;
     margin-right: 10px;
   }
-`
+`;
 
 const CheckBoxStyle = styled.div`
-display: grid;
-margin-top: 30px;
-margin-bottom: 30px;
-`
+  display: grid;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  lign-height: 30px;
+
+  .input__Checkbox {
+    height: 30px;
+    font-size: 20px;
+  }
+
+  .input__Checkbox input {
+    margin: 20px;
+  }
+`;
 
 export { MainStyle, Header, DisplayJobs, CheckBoxStyle };

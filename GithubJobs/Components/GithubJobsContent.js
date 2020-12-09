@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { DisplayJobs } from "./StylesComponents";
 
+//display the githubjobs content after mapping
+
 function GithubJobsContent({ job }) {
   return (
     <DisplayJobs>
@@ -13,8 +15,13 @@ function GithubJobsContent({ job }) {
           <div className="information">
             <p>{job.location}</p>
             <p>{job.title}</p>
-
             <button>{job.type}</button>
+          </div>
+          <div>
+            <p>
+              {job.company} ( {job.location} )
+            </p>
+            <p>{job.created_at}</p>
           </div>
         </div>
       </Link>

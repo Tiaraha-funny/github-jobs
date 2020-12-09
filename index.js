@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-import GithubJobsApp from "./Components/GithubJobsApp";
-import { GlobalContexts } from "./Components/GlobalContexts";
+import GithubJobsApp from "./GithubJobs/Main_components/GithubJobsApp";
+import { GlobalContexts } from "./GithubJobs/Main_components/GlobalContexts";
 import "./style.css";
 
 ReactDOM.render(

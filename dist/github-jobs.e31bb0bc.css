@@ -7,6 +7,20 @@ img {
     max-width: 100%;
 }
 
+button {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input {
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
 .searchForm {
     background-image: url(/backgroundImg.de30c8c3.png);
     display: flex;
@@ -27,6 +41,10 @@ img {
 
 .search-form {
     text-align: center;
+}
+
+.search-form input, .form-group input {
+    width: 100%;
 }
 
 .search__section--form > form {
@@ -92,25 +110,6 @@ img {
     box-shadow: 0 2px 4px rgba(0,0,0,.05);
 }
 
-
-a {
-    text-decoration: none;
-}
-
-input {
-    outline: none;
-    border-radius: 10px;
-    border: none;
-}
-
-.backHome {
-    font-size: 50px;
-}
-
-.backHome:hover {
-    color: red;
-}
-
 .filters {
     margin-top: 30px;
     font-size: 20px;
@@ -124,6 +123,153 @@ input {
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+/* --------------------------------Markdown style --------------------------------------------- */
+
+.header h1 {
+    font-family: "Poppins",sans-serif;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #282538;
+}
+
+.details {
+    padding: 20px;
+}
+
+.details-sidebar {
+    flex-basis: 100%;
+}
+
+.backHome {
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.backHome:hover {
+    color: blue;
+}
+
+.details-sidebare__back-link {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.details-sidebar h3 {
+    color: #b9bdcf;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-top: 36px;
+}
+
+ .howto {
+    font-family: "Poppins",sans-serif;
+    color: #334680;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-top: 16px;
+    font-weight: 500;
+    word-break: break-word;
+}
+
+*, :after, :before {
+    margin: 0;
+    padding: 0;
+}
+
+.header h1 span {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.custom-label {
+    display: inline-flex;
+}
+
+ .job-date {
+    font-family: "Roboto",sans-serif;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 10px;
+    line-height: 1opx;
+}
+
+.details-content {
+    flex-basis: 100%;
+    margin-top: 36px;
+}
+
+.custom-label {
+    padding: 8px;
+    border: 1px solid #334680;
+    border-radius: 4px;
+    align-self: start;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #334680;
+    font-weight: 700;
+}
+.company-details {
+    display: flex;
+    margin-top: 32px;
+    align-items: center;
+}
+.company-details img {
+    width: 42px;
+    height: 42px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin-right: 12px;
+    box-shadow: 2px 3px 7px rgba(0,0,0,.27);
+}
+
+.job-date, .job-location {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    color: #b9bdcf;
+}
+
+
+.job-description {
+    margin-top: 32px;
+    font-family: "Roboto",sans-serif;
+    color: #334680;
+    font-size: 14px;
+    line-height: 2.5rem;
+    line-height: 150%;
+    vertical-align: top;
+    text-align: left;
+}
+
+.job-description p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+@media (min-width: 1000px) {
+    .jobs__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .Location__form {
+        margin-right: 20px;
+        width: 30%;
+    }
+
+    .jobs__container--display {
+        margin-top: 30px;
+        width: 65%;
+    }
+
+    body {
+        padding: 40px;
+    }
 }
 
 /*# sourceMappingURL=/github-jobs.e31bb0bc.css.map */
