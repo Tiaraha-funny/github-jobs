@@ -1,41 +1,7 @@
 # Github Jobs
 
 My goal with this projector is to create a job search using an API, and use React to handle the frontend. I fulfill what the  users will do in this app.
-
-
-- User story: I can see a list of jobs in a city by default
-- User story: I can search for jobs with a given keyword
-- User story: I can search for jobs with a city name, zip code or other location
-- User story: I can select one option from at least 4 pre-defined options
-- User story: I can search for a full-time job only
-- User story: I can see a list of jobs with their logo, company name, location, and posted time.
-- User story: When I select a job, I can see job descriptions and how to apply like the given design.
-- User story: When I am on the job details page, I can go back to the search page
-- User story (optional): I can see a list of jobs in the closest city from my location by default
-- User story (optional): I can see jobs in different pages, 5 items each page
-
-You’ll also have to apply a few concept we learned in class, such as a **reducer** and a global **context**. And there will be a bonus for those who can find a use case for a **compound component**.
-
-**Icon**: https://google.github.io/material-design-icons/ (you can also use the react-icons package)
-
-**API**: https://jobs.github.com/api. Use data from the API to create questions and answers.
-
-*If you get some CORS errors, you can use https://cors-anywhere.herokuapp.com/ to help with accessing data from other websites that are normally forbidden by the same-origin policy of web browsers*
-
-**Design** : https://www.figma.com/file/gAkVx9CdOqnJcCjJ7nVNkw
-
-**Live app** : https://jolly-heisenberg-20c49e.netlify.app/
-
-Once you completed, polish a nice readme submit your solutions on this link : https://forms.gle/Xg6kJMKmrBkyTe3TA, by providing URLs for both GitHub repository and live app on Netlify.
-
-For the custom domain url you'll enter in netlify, please use the following naming convention : **github-jobs-_YOUR_FIRSTNAME_.netlify.app** (replace YOUR_FIRSTNAME by your firstname)
-
-Good luck everybody!
-
-Template for your readme :
-
-<!-- Please update value in the {}  -->
-
+-   Netlify app [deploy](https://github-jobs-peta.netlify.app/)
 
 <div align="center">
   <h3>
