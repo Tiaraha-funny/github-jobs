@@ -10,15 +10,15 @@ const API_JOBS =
   "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?&markdown=true";
 
 const FULL_TIME_API =
-  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&full_time=true&location=sf";
+  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&full_time=true&location=sf&markdown=true";
 const LONDON_API =
-  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=london";
+  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=london&markdown=true";
 const AMSTERDAM_API =
-  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=amsterdam";
+  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=amsterdam&markdown=true";
 const NEW_YORK_API =
-  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=new+york";
+  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=new+york&markdown=true";
 const BERLIN_API =
-  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=berlin";
+  "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=berlin&markdown=true";
 
 // A very big function to handle most of the actions
 

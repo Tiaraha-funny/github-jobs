@@ -52669,11 +52669,11 @@ const Contexts = (0, _react.createContext)(); // These are the APIS that I am go
 
 exports.Contexts = Contexts;
 const API_JOBS = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?&markdown=true";
-const FULL_TIME_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&full_time=true&location=sf";
-const LONDON_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=london";
-const AMSTERDAM_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=amsterdam";
-const NEW_YORK_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=new+york";
-const BERLIN_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=berlin"; // A very big function to handle most of the actions
+const FULL_TIME_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&full_time=true&location=sf&markdown=true";
+const LONDON_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=london&markdown=true";
+const AMSTERDAM_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=amsterdam&markdown=true";
+const NEW_YORK_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=new+york&markdown=true";
+const BERLIN_API = "https://cors-anywhere.herokuapp.com/https://jobs.github.com/positions.json?description=python&location=berlin&markdown=true"; // A very big function to handle most of the actions
 
 function GlobalContexts({
   children
@@ -53358,7 +53358,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54846" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50205" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
